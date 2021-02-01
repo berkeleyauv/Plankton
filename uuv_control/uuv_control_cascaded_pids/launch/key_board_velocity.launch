@@ -24,10 +24,11 @@
     </node>
   </group>
 
-  <include file="$(find-pkg-share uuv_teleop)/launch/uuv_keyboard_teleop.launch">
+  <!-- This launch file doesn't work right now due to weird termios issues. Instead run the vehicle_keyboard_teleop node directly with ros2 run. -->
+  <!-- <include file="$(find-pkg-share uuv_teleop)/launch/uuv_keyboard_teleop.launch">
     <arg name="uuv_name" value="$(var uuv_name)"/>
     <arg name="output_topic" value="cmd_vel"/>
     <arg name="message_type" value="twist"/>
-  </include>
+  </include> -->
 
 </launch>
