@@ -55,7 +55,7 @@ class PIDRegulator:
         self.prev_t = t
 
         if (numpy.linalg.norm(u) > self.sat):
-            # controller is in saturation: limit outpt, reset integral
+            # controller is in saturation: limit output, reset integral
             u = self.sat*u/numpy.linalg.norm(u)
             self.integral = 0.0
 
