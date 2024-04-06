@@ -36,7 +36,10 @@ set(BASE_LIBS
   visualization_msgs 
 )
 
-include_directories(include)
+include_directories(
+  include
+  /opt/ros/humble/include
+  )
 
 link_directories(${GAZEBO_LIBRARY_DIRS})
 

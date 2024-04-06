@@ -27,8 +27,8 @@
 #include <uuv_gazebo_ros_plugins_msgs/srv/get_list_param.hpp>
 
 #include <gazebo/common/Plugin.hh>
-
-#include <gazebo_ros/node.hpp>
+#include </opt/ros/humble/include/gazebo_ros/node.hpp>
+// #include <gazebo-ros/node.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/wrench_stamped.hpp>

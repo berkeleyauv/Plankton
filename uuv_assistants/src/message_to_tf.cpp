@@ -72,14 +72,14 @@ void addTransform(std::vector<geometry_msgs::msg::TransformStamped>& transforms,
   transforms.push_back(new_msg);
 }
 
-namespace tf2 
-{
-  //Specialization for Point msg
-  static inline void fromMsg(const geometry_msgs::msg::Point& msgIn, tf2::Vector3& out) 
-  {
-    out = Vector3(msgIn.x, msgIn.y, msgIn.z);
-  }
-}
+// namespace tf2 
+// {
+//   //Specialization for Point msg
+//   static inline void fromMsg(const geometry_msgs::msg::Point& msgIn, tf2::Vector3& out) 
+//   {
+//     out = Vector3(msgIn.x, msgIn.y, msgIn.z);
+//   }
+// }
 
 std::string stripSlash(const std::string & in)
 {

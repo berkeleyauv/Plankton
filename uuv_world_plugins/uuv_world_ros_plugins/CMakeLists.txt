@@ -28,7 +28,11 @@ set(LIBS
   rclcpp
 )
 
-include_directories(include)
+include_directories(
+  include
+  /opt/ros/humble/include
+  )
+
 
 add_library(uuv_underwater_current_ros_plugin SHARED src/UnderwaterCurrentROSPlugin.cpp)
 ament_target_dependencies(uuv_underwater_current_ros_plugin ${LIBS})
